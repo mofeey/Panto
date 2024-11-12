@@ -1,0 +1,30 @@
+// Fonts
+$font-main: "Gilroy", sans-serif;
+$font-card: "Inter", serif;
+
+
+// Base color variables
+$color-white: #fff;
+$color-dark: #1E1E1E;
+$color-dark-lighten: #2D2F33;
+$color-gray: #8D8D8D;
+$color-turquoise: #00D6C9;
+$color-dark-blue: #0D1B39;
+
+$color-accent-bright: #F6B76F;
+$color-accent-warm: #F6973F;
+$color-accent: #E58411;
+
+// Functional element color variables
+
+$color-text-white: $color-white;
+$color-text-dark: $color-dark;
+
+$color-text-slider: $color-dark-blue;
+$color-stars-active: $color-accent-bright;
+$color-text-muted: $color-gray;
+
+$color-accent-main: #E58411;
+
+$color-mobile-bg: $color-dark-lighten;
+$color-footer-bg: $color-dark-lighten;
