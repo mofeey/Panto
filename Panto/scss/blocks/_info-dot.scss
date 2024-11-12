@@ -1,0 +1,45 @@
+.info-dot {
+    position: relative;
+    cursor: pointer;
+
+    &__circle {
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &:hover &__circle {
+        background-color: $color-accent-main;
+    }
+
+    &__radius {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+
+        border: 0.86px solid;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+
+        animation: pulse-radius 1s infinite alternate;
+        @keyframes pulse-radius {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    &:hover &__radius {
+        animation: pulse-radius 1s infinite alternate paused;
+    }
+
+}

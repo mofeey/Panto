@@ -1,0 +1,146 @@
+.footer {
+    background-color: $color-footer-bg;
+    padding: 120px 0 50px 0;
+    color: $color-text-white;
+    // .footer__container
+
+    &__container {
+        max-width: 1124px;
+    }
+
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    // .footer__content
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 140px;
+        row-gap: 40px;
+
+        margin-bottom: clamp(3.75rem, 2.6786rem + 5.3571vw, 7.5rem);
+
+        @include large () {
+            column-gap: 80px;
+        }
+
+        @include medium () {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    // .footer__text
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        max-width: 300px;
+
+        @include large () {
+            max-width: 270px;
+        }
+
+        @include medium () {
+            max-width: 400px;
+        }
+    }
+
+    &__logo {
+        @include medium () {
+            text-align: center;
+        }
+    }
+
+    // .footer__desc
+
+    &__desc {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 160%;
+        opacity: 0.8;
+
+        @include medium () {
+            text-align: justify;
+        }
+    }
+
+    // .footer__nav
+
+    &__nav {
+        display: flex;
+        column-gap: 84px;
+
+        @include large () {
+            column-gap: 50px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    // .footer__nav-link
+
+    &__list-link {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: -0.01em;
+        opacity: 0.8;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-accent-warm;
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include extra-small () {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+
+    &__copy {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: -0.01em;
+        opacity: 0.5;
+    }
+
+    // .footer__links
+
+    &__links {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+
+        @include extra-small () {
+            column-gap: 30px;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 160%;
+            opacity: 0.8;
+        }
+    }
+}

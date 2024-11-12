@@ -1,0 +1,33 @@
+// Breakpoints
+@mixin extra-large () {
+    @media (max-width: 1199.9px) {
+        @content;
+    }
+}
+
+// @include large () {}
+@mixin large () {
+    @media (max-width: 991.99px) {
+        @content;
+    }
+}
+
+// @include medium () {}
+@mixin medium () {
+    @media (max-width: 767.99px) {
+        @content;
+    }
+}
+// @include small () {}
+@mixin small () {
+    @media (max-width: 575.99px) {
+        @content;
+    }
+}
+
+// @include extra-small () {}
+@mixin extra-small () {
+    @media (max-width: 479.99px) {
+        @content;
+    }
+}

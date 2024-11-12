@@ -1,0 +1,45 @@
+body {
+    font-family: $font-main;
+    position: relative;
+}
+
+.container {
+    max-width: 1340px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 1.4286rem + 0.3571vw, 1.75rem);
+    letter-spacing: 0.01em;
+    color: $color-text-white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 42px;
+    color: $color-dark;
+}
+
+// btn more
+.more-link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 13px;
+    font-weight: 500;
+    color: $color-accent-main !important;
+    transition: column-gap 0.6s ease;
+
+    &:hover {
+        column-gap: 30px;
+    }
+}
